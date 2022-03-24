@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 // Pages import
 import HomePage from './pages/HomePage';
+import ErrorPage from './pages/404';
 import PrivacyPage from './pages/PrivacyPage';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/Home/Privacy" element={<PrivacyPage />} exact />
+        <Route path="/*" element={<ErrorPage />} exact />
       </Routes>
     <Footer />
     </BrowserRouter>
